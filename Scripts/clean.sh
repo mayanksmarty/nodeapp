@@ -1,1 +1,1 @@
-sudo rm -rf /var/www/html/app
+rm -rf /var/www/html/app
