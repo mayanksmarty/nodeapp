@@ -3,21 +3,21 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/app
-hooks:
+#hooks:
   #ApplicationStop:
    # - location: Scripts/stop_server.sh
     #  timeout: 300
      # runas: root
-  BeforeInstall:
-    - location: Scripts/cleanup.sh
-      timeout: 180
-      runas: root
-  AfterInstall:
-    - location: Scripts/dependency.sh
-      timeout: 180
-      runas: root
-    - location: Scripts/runApp.sh
-      timeout: 180
-      runas: root
+ # BeforeInstall:
+   # - location: Scripts/cleanup.sh
+     # timeout: 180
+     # runas: root
+  #AfterInstall:
+    #- location: Scripts/dependency.sh
+     # timeout: 180
+     # runas: root
+   # - location: Scripts/runApp.sh
+     # timeout: 180
+      #runas: root
     
     
