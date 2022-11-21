@@ -4,10 +4,10 @@ files:
   - source: /
     destination: /var/www/html/app
 hooks:
-  ApplicationStop:
-    - location: Scripts/stop_server.sh
-      timeout: 300
-      runas: root
+  #ApplicationStop:
+   # - location: Scripts/stop_server.sh
+    #  timeout: 300
+     # runas: root
   BeforeInstall:
     - location: Scripts/cleanup.sh
       timeout: 180
