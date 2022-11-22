@@ -34,7 +34,7 @@ async function randomId() {
 }
 
 app.get("/test", (req, res) => {
-  res.send("<h1>It's working fine 🤗</h1>")
+  res.send("<h1>It's working fine ok right now 🤗</h1>")
 })
 
 app.get("/", async (req, res) => {
